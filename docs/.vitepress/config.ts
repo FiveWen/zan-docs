@@ -62,7 +62,9 @@ export default defineConfig({
         {
           text: 'App 对接',
           items: [
-            { text: '概述与快速开始', link: '/app/' },
+            { text: '总览', link: '/app/' },
+            { text: '平台型 App 对接', link: '/app/platform-app' },
+            { text: 'App 接入商城 H5', link: '/app/app-embed-mall' },
             { text: 'API 说明', link: '/app/api' },
             { text: '常见问题', link: '/app/faq' },
             { text: '更新日志', link: '/app/changelog' }

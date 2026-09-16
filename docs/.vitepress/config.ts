@@ -61,11 +61,35 @@ export default defineConfig({
       '/app/': [
         {
           text: 'App 对接',
+          items: [{ text: '接入模式总览', link: '/app/' }]
+        },
+        {
+          text: '我方适配平台型 App',
+          collapsed: false,
           items: [
-            { text: '总览', link: '/app/' },
-            { text: '平台型 App 对接', link: '/app/platform-app' },
-            { text: 'App 接入商城 H5', link: '/app/app-embed-mall' },
-            { text: 'API 说明', link: '/app/api' },
+            { text: '适配说明', link: '/app/platform-app' },
+            { text: '开发流程', link: '/app/platform-development' },
+            { text: 'Adapter 规范', link: '/app/platform-adapter' },
+            { text: '北仑 CP2 参考实现', link: '/app/platform-beilun-cp2' }
+          ]
+        },
+        {
+          text: '第三方 App 接入商城 H5',
+          collapsed: false,
+          items: [
+            { text: '快速开始', link: '/app/app-embed-mall' },
+            { text: 'WebView 与环境约定', link: '/app/embed-webview' },
+            { text: '登录协议', link: '/app/embed-login' },
+            { text: '导航与分享', link: '/app/embed-navigation-share' },
+            { text: '扫码协议', link: '/app/embed-scan' },
+            { text: '支付协议', link: '/app/embed-payment' },
+            { text: '错误处理与联调', link: '/app/embed-troubleshooting' }
+          ]
+        },
+        {
+          text: '附录',
+          items: [
+            { text: '版本与能力状态', link: '/app/api' },
             { text: '常见问题', link: '/app/faq' },
             { text: '更新日志', link: '/app/changelog' }
           ]
